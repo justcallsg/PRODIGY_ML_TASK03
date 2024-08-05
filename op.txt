@@ -1,0 +1,42 @@
+D:\progigy\PRODIGY_ML_TASK03-main>C:/Users/nnidh/AppData/Local/Microsoft/WindowsApps/python3.12.exe d:/progigy/PRODIGY_ML_TASK03-main/cat_dog_SVM_classifier.py
+[INFO] Using CPU
+[INFO] Loading data...
+[DEBUG] Checking directory: D:\progigy\data-full\train
+[DEBUG] Checking directory: D:\progigy\data-full\test
+[INFO] Loaded 6 images under train
+[INFO] Loaded 6 images under test
+Classes: ['cat', 'dog']
+[INFO] Getting VGG-16 pre-trained model...
+C:\Users\nnidh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\torchvision\models\_utils.py:135: UserWarning: Using 'weights' as positional parameter(s) is deprecated since 0.13 and may be removed in the future. Please use keyword parameter(s) instead.
+  warnings.warn(
+[INFO] Getting 'train' features...
+[FEATURE] Loading batch 1/1 (6 images)
+[FEATURE] Features loaded
+[INFO] Getting 'test' features...
+[FEATURE] Loading batch 1/1 (6 images)
+[FEATURE] Features loaded
+[INFO] Getting model...
+[INFO] Fitting...
+[INFO] Model completed
+[INFO] Testing...
+[INFO] Printing classification report
+[Evaluation Model] Showing detailed report
+
+              precision    recall  f1-score   support
+
+         cat     1.0000    1.0000    1.0000         3
+         dog     1.0000    1.0000    1.0000         3
+
+    accuracy                         1.0000         6
+   macro avg     1.0000    1.0000    1.0000         6
+weighted avg     1.0000    1.0000    1.0000         6
+
+[Evaluation Model] Showing confusion matrix
+                       Predicted Label
+                         0            1
+ Truth Label     0   0.500000     0.000000
+                 1   0.000000     0.500000
+[INFO] Model produced in 0m 0s
+[INFO] Saving report...
+[INFO] Saving model...
+[INFO] Done
